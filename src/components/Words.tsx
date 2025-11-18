@@ -7,11 +7,11 @@ export function Words({ words = [] }: { words?: string[] }) {
     function randomColors() {
         const colors = [
             'text-primary',
-            'text-primary-200',
-            'text-primary-100',
+            'text-primary-600',
+            'text-primary-500',
             'text-secondary',
-            'text-secondary-200',
-            'text-secondary-100',
+            'text-secondary-500',
+            'text-secondary-400',
             'text-complementary',
         ];
         return colors[Math.floor(Math.random() * colors.length)];
@@ -23,7 +23,7 @@ export function Words({ words = [] }: { words?: string[] }) {
     }
 
     function randomSize() {
-        const sizes = ['text-xl','text-lg','text-2xl'];
+        const sizes = ['text-sm sm:text-xl','text-xs sm:text-lg','text-md sm:text-2xl'];
         return sizes[Math.floor(Math.random() * sizes.length)];
     }
 
@@ -36,15 +36,15 @@ export function Words({ words = [] }: { words?: string[] }) {
     return (
         <div className="flex flex-wrap justify-center items-start font-changa">
             {words.map((word, index) => (
-                <p
+                <span
                     key={index}
-                    className={`${randomSize()} ${randomColors()} ${randomAnimations()} p-2 m-1 text-center bg-gray-800`}
+                    className={`${randomSize()} ${randomColors()} ${randomAnimations()} ${styles.item} p-2 m-1 text-center bg-gray-800 cursor-pointer hover:scale-125 hover:shadow-lg shadow-complementary-50/20 transition-all duration-700`}
                     style={{
                         animationDuration: randomDuration(),
                     }}
                 >
                     {word}
-                </p>
+                </span>
             ))}
         </div>
            );

@@ -3,7 +3,7 @@ import { Card } from "./Card";
 export function Services() {
     return (
         <section className="bg-blueking text-white p-5">
-            <h1 className="text-6xl p-5 text-center text-primary-100">Servicios y Artesanías</h1>
+            <h1 className="text-6xl p-5 text-center text-primary-300">Servicios y Artesanías</h1>
             <p className="text-center text-secondary max-w-3xl mx-auto">
                 Una empresa es una aventura, <span className="italic">un viaje del heroe</span>. ¿Sabes ya narrar tu producto? 
             </p>

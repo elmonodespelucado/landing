@@ -10,6 +10,20 @@
   animation: float3 15s ease-in-out infinite;
 }
 
+.item:hover {
+  animation-play-state: paused;
+  z-index: 10;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px) translateX(0px) rotate(0deg);
