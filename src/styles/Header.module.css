@@ -1,9 +1,7 @@
 .header {
   background-image: url('../assets/costa.svg');
-  fill: var(--color-gray-800);
   background-repeat: repeat-x;
   animation: moveWaves 10s ease-in-out infinite;
-  background-size: 110%;
   /*gradient background*/
 }
 
