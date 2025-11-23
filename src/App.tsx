@@ -1,23 +1,20 @@
-import { Contact } from './components/Contact'
-import { Hero } from './components/Hero'
-import { NavBar } from './components/NavBar'
-import { Services } from './components/Services'
+import { Contact } from './components/Contact.tsx';
+import { Hero } from './components/Hero.tsx';
+import { Header } from './components/layout/Header.tsx';
+import { Services } from './components/Services.tsx';
 
 function App() {
-
   return (
     <>
-      <header className='text-'>
-        <NavBar />
-      </header>
+      <Header />
       <main>
         <Hero />
-        <Services/>
-        <Contact/>
+        <Services />
+        <Contact />
       </main>
       <footer></footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

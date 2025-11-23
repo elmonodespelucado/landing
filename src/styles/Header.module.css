@@ -1,0 +1,30 @@
+.header {
+  background-image: url('../assets/costa.svg');
+  fill: var(--color-gray-800);
+  background-repeat: repeat-x;
+  animation: moveWaves 10s ease-in-out infinite;
+  background-size: 110%;
+  /*gradient background*/
+}
+
+@keyframes moveWaves {
+  0% {
+    background-position: 50% bottom;
+  }
+
+  25% {
+    background-position: 55% 103%;
+  }
+
+  50% {
+    background-position: 60% bottom;
+  }
+
+  75% {
+    background-position: 55% 102%;
+  }
+
+  100% {
+    background-position: 50% bottom;
+  }
+}

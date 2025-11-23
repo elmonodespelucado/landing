@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Didact+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Didact+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-primary: #fc413c;
@@ -72,7 +72,7 @@
 }
 
 :root {
-  font-family: "Montserrat", "Didact Gothic", sans-serif;
+  font-family: 'Montserrat', 'Didact Gothic', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -87,7 +87,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--color-secondary);
+  background-color: var();
 }
 
 h1,
@@ -96,13 +96,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Changa One", cursive;
+  font-family: 'Changa One', cursive;
   margin: 0;
   font-weight: 400;
 }
 
 .font-changa {
-  font-family: "Changa One", cursive;
+  font-family: 'Changa One', cursive;
 }
 
 .hero-bg {
