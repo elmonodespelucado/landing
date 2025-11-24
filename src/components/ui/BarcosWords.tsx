@@ -21,7 +21,7 @@ export function BarcosWords({ words = [] }: { words?: string[] }) {
     'px-4 py-2 m-1 text-center cursor-pointer bg-gray-800/90 hover:scale-125 hover:shadow-xl shadow-complementary-50/30 transition-all duration-300 z-10 hover:z-20 font-semibold whitespace-nowrap relative flex items-center justify-center';
 
   return (
-    <div className="flex flex-wrap items-center justify-center max-w-xl m-auto flex-1 ">
+    <div className="flex flex-wrap items-center justify-center max-w-xl m-auto flex-1 font-changa overflow-hidden">
       {shuffledWords.map((word, index) => {
         return (
           <div

@@ -1,12 +1,12 @@
 import { NavLink } from '../ui/NavLink';
 import { Logo } from '../Logo';
 const styles = {
-  socialLinks: 'flex flex-col md:flex-row gap-2 p-2',
+  socialLinks: 'flex flex-col items-end md:flex-row gap-2 p-2',
 };
 export function NavBar() {
   return (
-    <nav className="grid grid-cols-3 items-center justify-center relative">
-      <div className="  px-4 ">
+    <nav className="grid grid-cols-3 items-center justify-center relative min-h-40">
+      <div className="px-4 ">
         <div className="hidden sm:flex flex-col sm:flex-row gap-1 sm:gap-5 items-end justify-center sm:justify-end">
           <NavLink>Arte</NavLink>
           <NavLink>Desarrollo</NavLink>
@@ -34,10 +34,10 @@ export function NavBar() {
         </div>
       </div>
 
-      <div className="px-5 flex justify-center">
+      <div className="flex justify-center">
         <Logo />
       </div>
-      <div className="  px-4 text-sm md:text-base max-w-md">
+      <div className=" px-4 text-sm md:text-base max-w-md">
         <div className={`${styles.socialLinks}`}>
           <NavLink target="_blank" href="https://www.tiktok.com/@elmonodespelucado">
             <svg

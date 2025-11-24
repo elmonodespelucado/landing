@@ -17,14 +17,16 @@ export function Header() {
   return (
     <div className="bg-gray-900">
       <header
-        className={`h-screen bg-linear-to-b from-secondary-200 via-secondary to-secondary-400`}
+        className={`md:h-screen bg-linear-to-b from-secondary-200 via-secondary to-secondary-400`}
       >
-        <div className={`${styles.header} h-full flex flex-col justify-center `}>
-          <div className="flex-1 flex justify-center items-center">
+        <div
+          className={`${styles.header} bg-contain  pb-20 md:pb-0 h-full flex flex-col md:justify-center `}
+        >
+          <div className="md:flex-1 flex justify-center items-center">
             <BarcosWords words={words} />
           </div>
           <NavBar />
-          <div className="flex-1 flex justify-center items-center">
+          <div className="md:flex-1 flex justify-center items-center">
             <p className="max-w-xl text-secondary-600 p-5 text-center text-lg">
               Quiero que cada empresa sea una aventura.
               <br /> Devolverle el valor a lo "divertido", "importante" y "vital"
