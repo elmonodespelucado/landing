@@ -2,5 +2,88 @@
   background-image: url('../assets/costa.svg');
   background-repeat: repeat-x;
   /*gradient background*/
-  background-position: bottom;
+  background-size: 768px;
+  view-timeline: --scroll;
+  animation: floatBackground 10s ease-in-out infinite;
+  background-position: 0 48dvh;
+}
+
+.header .fadeHeader {
+  animation:
+    fade-away both linear,
+    scale-down both linear;
+  animation-timeline: --scroll;
+  animation-range:
+    exit 20% exit 50%,
+    exit 10% exit 80%;
+}
+
+.header .wordsHeader {
+  animation:
+    fade-away both linear,
+    scale-down both linear;
+  animation-timeline: --scroll;
+  animation-range:
+    exit 20% exit 50%,
+    exit 10% exit 80%;
+}
+
+@keyframes fade-away {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scale-down {
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes floatBackground {
+  0% {
+    background-position: 0 48dvh%;
+  }
+  50% {
+    background-position: 0 40dvh;
+  }
+  100% {
+    background-position: 0 48dvh;
+  }
+}
+
+/* media queries tailwindcss */
+@media (min-width: 768px) {
+  @keyframes floatBackground {
+    0% {
+      background-position: 0 -20%;
+    }
+    50% {
+      background-position: 0 -30%;
+    }
+    100% {
+      background-position: 0 -20%;
+    }
+  }
+  .header {
+    background-position: 0 -40%;
+    background-size: 1800px;
+  }
+}
+@media (min-width: 1024px) {
+  @keyframes floatBackground {
+    0% {
+      background-position: 0 -20%;
+    }
+    50% {
+      background-position: 0 -30%;
+    }
+    100% {
+      background-position: 0 -20%;
+    }
+  }
+  .header {
+    background-position: 0 -35%;
+    background-size: 1800px;
+  }
 }

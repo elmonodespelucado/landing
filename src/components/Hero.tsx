@@ -1,29 +1,29 @@
+import { ServiceCard } from './ui/ServiceCard.tsx';
+import style from '../styles/Hero.module.css';
+
 export function Hero() {
   return (
-    <section className="bg-gray-900 hero-bg px-5 shadow-lg flex flex-col justify-center items-center text-white divide-gray-700">
-      <div className="flex flex-col items-center justify-center text-center sm:px-10 py-10">
-        <h1 className="text-2xl sm:text-6xl font-bold pb-2 sm:pb-10 text-complementary">
-          Arte, Código y Comunicación.
-        </h1>
-        <p className="text-md sm:text-xl max-w-2xl mb-4 sm:mb-8 ">
-          ¿Piensas que comunicar es un acto artístico? ¿Crees que construir y entender sistemas es
-          un acto creativo? Yo soy Santi Marchena{' '}
-          <a
-            href="http://instagram.com/elmonodespelucado"
-            className="text-primary font-black"
-            target="_blank"
-          >
-            @elmonodespelucado
-          </a>{' '}
-          y quiero ayudarte a comunicar tus ideas a través del arte y la tecnología.
-        </p>
-        <a
-          href="#learn-more"
-          className="bg-primary text-white px-6 py-3 text-lg hover:bg-primary-200 shadow hover:shadow-lg transition-all"
-        >
-          Conozcámonos
-        </a>
-      </div>
+    <section
+      className={`${style.hero} bg-gray-900 hero-bg px-5 shadow-lg text-white divide-gray-700 flex justify-center flex-wrap gap-4`}
+    >
+      <ServiceCard title="Guión de tu empresa">
+        Entendemos la <b>historia</b> de tu marca.
+        <br />
+        <br />
+        Identificamos el <b>héroe</b>, su <b>ideal</b> y sus <b>misiones</b>.
+      </ServiceCard>
+      <ServiceCard title="Tracemos los caminos" directionXMap="right">
+        Tenemos caminos infinitos. Podemos detenernos a trazar el mapa.
+        <br />
+        <br />O embarcarnos a crear una historia.
+      </ServiceCard>
+      <ServiceCard title="A la aventura!" directionXMap="center">
+        ¿Empezaremos con tu contenido? ¿Creando un evento?
+        <br />
+        ¿Se te ocurre una aplicación? Quizá una landing.
+        <br /> Tenemos todo a nuestra disposición.
+        <br /> La creatividad es el hilo que une los procesos.
+      </ServiceCard>
     </section>
   );
 }

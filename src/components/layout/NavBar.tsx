@@ -1,5 +1,6 @@
 import { NavLink } from '../ui/NavLink';
 import { Logo } from '../Logo';
+import headerStyle from '../../styles/Header.module.css';
 const styles = {
   socialLinks: 'flex flex-col items-end md:flex-row gap-2 p-2',
 };
@@ -34,7 +35,7 @@ export function NavBar() {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className={`${headerStyle.logoApp} flex justify-center`}>
         <Logo />
       </div>
       <div className=" px-4 text-sm md:text-base max-w-md">

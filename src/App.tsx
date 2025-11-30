@@ -1,7 +1,5 @@
-import { Contact } from './components/Contact.tsx';
 import { Hero } from './components/Hero.tsx';
 import { Header } from './components/layout/Header.tsx';
-import { Services } from './components/Services.tsx';
 
 function App() {
   return (
@@ -9,10 +7,9 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <Contact />
+        {/* <Services />
+        <Contact /> */}
       </main>
-      <footer></footer>
     </>
   );
 }

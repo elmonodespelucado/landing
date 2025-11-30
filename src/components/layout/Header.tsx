@@ -19,18 +19,19 @@ export function Header() {
       <header
         className={`md:h-screen bg-linear-to-b from-secondary-200 via-secondary to-secondary-400`}
       >
-        <div
-          className={`${styles.header} bg-contain  pb-20 md:pb-0 h-full flex flex-col md:justify-center `}
-        >
-          <div className="md:flex-1 flex justify-center items-center">
-            <BarcosWords words={words} />
-          </div>
-          <NavBar />
-          <div className="md:flex-1 flex justify-center items-center">
-            <p className="max-w-xl text-secondary-600 p-5 text-center text-lg">
-              Quiero que cada empresa sea una aventura.
-              <br /> Devolverle el valor a lo "divertido", "importante" y "vital"
-            </p>
+        <div className={`${styles.header} bg-contain  pb-20 md:pb-0 h-full `}>
+          <div className={`${styles.fadeHeader} flex flex-col md:justify-center h-full`}>
+            <div className={` md:flex-1 flex justify-center items-center`}>
+              <BarcosWords words={words} />
+            </div>
+            <NavBar />
+            <div className="md:flex-1 flex justify-center">
+              <p className="max-w-xl text-secondary-00 p-5 text-center text-lg">
+                Cada <b>empresa y marca</b> es una aventura.
+                <br />
+                Divertirse, que el trabajo sea una misión, un pulso vital.
+              </p>
+            </div>
           </div>
         </div>
       </header>
